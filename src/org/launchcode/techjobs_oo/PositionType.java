@@ -29,7 +29,7 @@ public class PositionType {
     //  their id fields match.
 
     @Override
-    public boolean equals(Object o) {  // Two objects are equal if they have the same id.
+    public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof PositionType)) return false;
         PositionType positionType = (PositionType) o;
