@@ -45,4 +45,16 @@ public class JobTest {
         assertFalse( job1.equals (job2));
 
     }
+
+    @Test
+    public void FirstTestToString(){
+        assertEquals( "ID: " + job3.getId() +
+                "\nName: " + job3.getName() +
+                "\nEmployer: " + job3.getEmployer() +
+                "\nLocation: " + job3.getLocation() +
+                "\nPosition Type: " + job3.getPositionType() +
+                "\nCore Competency: "+ job3.getCoreCompetency() + "\n",
+                job3.toString());
+
+    }
 }
