@@ -19,13 +19,19 @@ public abstract class JobField {
     }
 
     public int getId() {return id;}
-    public void setId(int id) {this.id = id;}
+
 
     public String getValue() {return value;}
     public void setValue(String value) {this.value = value;}
 
+
+
     public String toString(){
-        return value;
+        if (value == null || value == "" ){
+            return "Data not available";
+        }else {
+            return value;
+        }
     }
     public boolean equals(Object o) {
         if (this == o) return true;

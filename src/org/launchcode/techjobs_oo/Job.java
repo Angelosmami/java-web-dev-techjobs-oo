@@ -96,44 +96,54 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
-
     @Override
     public String toString() {
-        String Id = "\nID: " + this.getId();
-        String stringName;
-        String stringEmployer;
-        String stringLocation;
-        String stringPositionType;
-        String stringCoreCompetency;
-
-        if (this.getName() == null) {
-            stringName = "\nName: " + "Data not available";
-        } else {
-            stringName = "\nName: " + this.getName();
-
-            if (employer.getValue().equals("") ) {
-                stringEmployer = "\nEmployer: " + "Data not available";
-            } else {
-                stringEmployer = "\nEmployer: " + this.getEmployer();
-            }
-            if (location.getValue().equals("")) {
-                stringLocation = "\nLocation: " + "Data not available";
-            } else {
-                stringLocation = "\nLocation: " + this.getLocation();
-            }
-            if (positionType.getValue().equals("")) {
-                stringPositionType = "\nPosition Type: " + "Data not available";
-            } else {
-                stringPositionType = "\nPosition Type: " + this.getPositionType();
-            }
-            if (coreCompetency.getValue().equals("")) {
-                stringCoreCompetency = "\nCore Competency: " + "Data not available";
-            } else {
-                stringCoreCompetency = "\nCore Competency: " + this.getCoreCompetency();
-            }
-            return Id + stringName + stringEmployer + stringLocation + stringPositionType + stringCoreCompetency;
-        }
-        return "Id + stringName + stringEmployer + stringLocation + stringPositionType + stringCoreCompetency";
+        return "\nID: " + this.getId() +
+                "\nName: " + this.getName() +
+                "\nEmployer: " + this.getEmployer() +
+                "\nLocation: " + this.getLocation() +
+                "\nPosition Type: " + this.getPositionType() +
+                "\nCore Competency: " + this.getCoreCompetency();
     }
+
+
+//    @Override
+//    public String toString() {
+//        String Id = "\nID: " + this.getId();
+//        String stringName;
+//        String stringEmployer;
+//        String stringLocation;
+//        String stringPositionType;
+//        String stringCoreCompetency;
+//
+//        if (this.getName() == null) {
+//            stringName = "\nName: " + "Data not available";
+//        } else {
+//            stringName = "\nName: " + this.getName();
+//
+//            if (employer.getValue().equals("") ) {
+//                stringEmployer = "\nEmployer: " + "Data not available";
+//            } else {
+//                stringEmployer = "\nEmployer: " + this.getEmployer();
+//            }
+//            if (location.getValue().equals("")) {
+//                stringLocation = "\nLocation: " + "Data not available";
+//            } else {
+//                stringLocation = "\nLocation: " + this.getLocation();
+//            }
+//            if (positionType.getValue().equals("")) {
+//                stringPositionType = "\nPosition Type: " + "Data not available";
+//            } else {
+//                stringPositionType = "\nPosition Type: " + this.getPositionType();
+//            }
+//            if (coreCompetency.getValue().equals("")) {
+//                stringCoreCompetency = "\nCore Competency: " + "Data not available";
+//            } else {
+//                stringCoreCompetency = "\nCore Competency: " + this.getCoreCompetency();
+//            }
+//            return Id + stringName + stringEmployer + stringLocation + stringPositionType + stringCoreCompetency;
+//        }
+//        return "Id + stringName + stringEmployer + stringLocation + stringPositionType + stringCoreCompetency";
+//    }
 }
 
