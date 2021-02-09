@@ -32,10 +32,6 @@ public class JobTest {
 
     @Test
     public void TestJobConstructorSetsAllFields(){
-        assertTrue(job3.getEmployer() instanceof Employer);
-        assertTrue(job3.getLocation() instanceof Location);
-        assertTrue(job3.getPositionType() instanceof PositionType);
-        assertTrue(job3.getCoreCompetency() instanceof CoreCompetency);
 
         assertEquals("Product tester", job3.getName());
         assertEquals("ACME", job3.getEmployer().getValue());

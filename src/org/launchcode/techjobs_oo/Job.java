@@ -111,22 +111,22 @@ public class Job {
         } else {
             stringName = "\nName: " + this.getName();
 
-            if (this.getEmployer() == null) {
+            if (employer.getValue().equals("") ) {
                 stringEmployer = "\nEmployer: " + "Data not available";
             } else {
                 stringEmployer = "\nEmployer: " + this.getEmployer();
             }
-            if (this.getLocation() == null) {
+            if (location.getValue().equals("")) {
                 stringLocation = "\nLocation: " + "Data not available";
             } else {
                 stringLocation = "\nLocation: " + this.getLocation();
             }
-            if (this.getPositionType() == null) {
+            if (positionType.getValue().equals("")) {
                 stringPositionType = "\nPosition Type: " + "Data not available";
             } else {
                 stringPositionType = "\nPosition Type: " + this.getPositionType();
             }
-            if (this.getCoreCompetency() == null) {
+            if (coreCompetency.getValue().equals("")) {
                 stringCoreCompetency = "\nCore Competency: " + "Data not available";
             } else {
                 stringCoreCompetency = "\nCore Competency: " + this.getCoreCompetency();
@@ -136,10 +136,4 @@ public class Job {
         return "Id + stringName + stringEmployer + stringLocation + stringPositionType + stringCoreCompetency";
     }
 }
-
-//                " + \nName: " + getName() +
-//                "\nEmployer: " + getEmployer() +
-//                "\nLocation: " + getLocation() +
-//                "\nPosition Type: " + getPositionType() +
-//                "\nCore Competency: " + getCoreCompetency() + "\n";
 
