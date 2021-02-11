@@ -103,7 +103,7 @@ public class Job {
                 "\nEmployer: " + this.getEmployer() +
                 "\nLocation: " + this.getLocation() +
                 "\nPosition Type: " + this.getPositionType() +
-                "\nCore Competency: " + this.getCoreCompetency();
+                "\nCore Competency: " + this.getCoreCompetency() + "\n";
     }
 
 }

@@ -27,7 +27,7 @@ public abstract class JobField {
 
 
     public String toString(){
-        if (value == null || value == "" ){
+        if (value.equals(null)|| value.equals("") ){
             return "Data not available";
         }else {
             return value;
